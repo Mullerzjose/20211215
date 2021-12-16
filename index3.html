@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tarea Clase</title>
+</head>
+<body>
+
+	<h3>Tarea Clase</h3>
+
+	<p>	Ingresar Valor:<input type="text" name="v1" id="v1"><br></p>
+
+		<button onclick="evaluar();">Evaluar</button><br>
+
+	<p>	Resultado:<input type="text" name="res" id="res"><br></p>
+
+	<script type="text/javascript">
+
+		function evaluar(){
+			let num1=document.getElementById('v1').value;
+			let n1=parseInt(num1,10);
+
+			if (n1>10 || n1<2){
+				document.getElementById('res').value='CUMPLE';
+			}else{
+				document.getElementById('res').value='NO CUMPLE';
+			}	
+		}
+
+	</script>
+</body>
+</html>
